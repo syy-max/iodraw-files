@@ -1,0 +1,212 @@
+<mxfile host="www.iodraw.com" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0" version="24.7.17">
+  <diagram name="第 1 页" id="unTR98PhiVtp1QshJa4j">
+    <mxGraphModel dx="2178" dy="2105" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-1" value="验收条件满足" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="971" width="258" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-2" value="输出最优路径方案" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-1">
+          <mxGeometry x="43" y="46" width="188" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-3" value="第二阶段：PPO强化学习优化 (循环迭代)" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="298" y="-410" width="334" height="2886" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-4" value="初始解So" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-3">
+          <mxGeometry x="113" y="46" width="124" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-5" value="环境初始化" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-3">
+          <mxGeometry x="120" y="169" width="110" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-6" value="构建图状态Go" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-3">
+          <mxGeometry x="110" y="293" width="129" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-7" value="GAT编码" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-3">
+          <mxGeometry x="130" y="416" width="90" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-8" value="GRU初始化时序记忆ho" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-3">
+          <mxGeometry x="80" y="540" width="190" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-9" value="PPO智能体" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-3">
+          <mxGeometry x="107" y="663" width="137" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-10" value="基于Go和ho选择动作ao" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-3">
+          <mxGeometry x="68" y="787" width="214" height="214" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-11" value="环境执行动作ao" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-3">
+          <mxGeometry x="103" y="1076" width="143" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-12" value="得到新状态S1和奖励ro" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-3">
+          <mxGeometry x="65" y="1199" width="219" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-13" value="更新图状态G1" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-3">
+          <mxGeometry x="95" y="1323" width="159" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-14" value="GRU更新时序记忆h1" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-3">
+          <mxGeometry x="88" y="1446" width="174" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-15" value="GAT重新编码" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-3">
+          <mxGeometry x="114" y="1570" width="122" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-16" value="MLP计算新路径评分V1" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-3">
+          <mxGeometry x="81" y="1693" width="188" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-17" value="将(So,ao,ro,Vo,ho)存入经验缓冲区" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-3">
+          <mxGeometry x="43" y="1817" width="264" height="264" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-18" value="重复上述过程直到收集足够轨迹" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-3">
+          <mxGeometry x="64" y="2155" width="222" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-19" value="计算优势函数" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-3">
+          <mxGeometry x="112" y="2297" width="126" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-20" value="用裁剪目标更新Actor网络" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-3">
+          <mxGeometry x="69" y="2420" width="213" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-21" value="用MSE损失更新Critic网络" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-3">
+          <mxGeometry x="70" y="2544" width="209" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-22" value="清空缓冲区" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-3">
+          <mxGeometry x="120" y="2667" width="110" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-23" value="回到环境初始化,开始下一轮迭代" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-3">
+          <mxGeometry x="61" y="2791" width="228" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-24" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.98;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-3" source="EW2jBZzsz_0-eKhD2JGC-4" target="EW2jBZzsz_0-eKhD2JGC-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-25" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-3" source="EW2jBZzsz_0-eKhD2JGC-5" target="EW2jBZzsz_0-eKhD2JGC-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-26" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.98;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-3" source="EW2jBZzsz_0-eKhD2JGC-6" target="EW2jBZzsz_0-eKhD2JGC-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-27" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-3" source="EW2jBZzsz_0-eKhD2JGC-7" target="EW2jBZzsz_0-eKhD2JGC-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-28" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.98;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-3" source="EW2jBZzsz_0-eKhD2JGC-8" target="EW2jBZzsz_0-eKhD2JGC-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-29" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-3" source="EW2jBZzsz_0-eKhD2JGC-9" target="EW2jBZzsz_0-eKhD2JGC-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-30" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-3" source="EW2jBZzsz_0-eKhD2JGC-10" target="EW2jBZzsz_0-eKhD2JGC-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-31" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.98;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-3" source="EW2jBZzsz_0-eKhD2JGC-11" target="EW2jBZzsz_0-eKhD2JGC-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-32" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-3" source="EW2jBZzsz_0-eKhD2JGC-12" target="EW2jBZzsz_0-eKhD2JGC-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-33" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.98;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-3" source="EW2jBZzsz_0-eKhD2JGC-13" target="EW2jBZzsz_0-eKhD2JGC-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-34" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-3" source="EW2jBZzsz_0-eKhD2JGC-14" target="EW2jBZzsz_0-eKhD2JGC-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-35" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.98;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-3" source="EW2jBZzsz_0-eKhD2JGC-15" target="EW2jBZzsz_0-eKhD2JGC-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-36" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-3" source="EW2jBZzsz_0-eKhD2JGC-16" target="EW2jBZzsz_0-eKhD2JGC-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-37" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0.01;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-3" source="EW2jBZzsz_0-eKhD2JGC-17" target="EW2jBZzsz_0-eKhD2JGC-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-38" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-3" source="EW2jBZzsz_0-eKhD2JGC-18" target="EW2jBZzsz_0-eKhD2JGC-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-39" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.98;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-3" source="EW2jBZzsz_0-eKhD2JGC-19" target="EW2jBZzsz_0-eKhD2JGC-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-40" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-3" source="EW2jBZzsz_0-eKhD2JGC-20" target="EW2jBZzsz_0-eKhD2JGC-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-41" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.98;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-3" source="EW2jBZzsz_0-eKhD2JGC-21" target="EW2jBZzsz_0-eKhD2JGC-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-42" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-3" source="EW2jBZzsz_0-eKhD2JGC-22" target="EW2jBZzsz_0-eKhD2JGC-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-43" value="第一阶段：启发式初始化" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="682" y="724" width="196" height="618" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-44" value="客户数据" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-43">
+          <mxGeometry x="44" y="46" width="124" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-45" value="巨型路径生成" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-43">
+          <mxGeometry x="43" y="169" width="126" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-46" value="2-opt优化" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-43">
+          <mxGeometry x="56" y="293" width="100" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-47" value="可行路径分割" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-43">
+          <mxGeometry x="43" y="416" width="126" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-48" value="初始可行解So" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="EW2jBZzsz_0-eKhD2JGC-43">
+          <mxGeometry x="43" y="540" width="126" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-49" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.98;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-43" source="EW2jBZzsz_0-eKhD2JGC-44" target="EW2jBZzsz_0-eKhD2JGC-45">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-50" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-43" source="EW2jBZzsz_0-eKhD2JGC-45" target="EW2jBZzsz_0-eKhD2JGC-46">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-51" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.98;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-43" source="EW2jBZzsz_0-eKhD2JGC-46" target="EW2jBZzsz_0-eKhD2JGC-47">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW2jBZzsz_0-eKhD2JGC-52" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="EW2jBZzsz_0-eKhD2JGC-43" source="EW2jBZzsz_0-eKhD2JGC-47" target="EW2jBZzsz_0-eKhD2JGC-48">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
